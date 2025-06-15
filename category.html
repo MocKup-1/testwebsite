@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afrishop - Category</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>AFRISHOP</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="category.html?cat=kitchen">Kitchen Appliances</a></li>
+                            <li><a href="category.html?cat=home">Home & Office</a></li>
+                            <li><a href="category.html?cat=baby">Baby & Kids</a></li>
+                            <li><a href="category.html?cat=car">Car Accessories</a></li>
+                            <li><a href="category.html?cat=health">Health & Beauty</a></li>
+                            <li><a href="category.html?cat=electronics">Electronics</a></li>
+                            <li><a href="category.html?cat=bedroom">Bedroom</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="category-header">
+            <div class="container">
+                <h1 id="category-title">Category Products</h1>
+                <p id="category-description">Browse our wide selection of products in this category</p>
+            </div>
+        </section>
+
+        <section class="category-products">
+            <div class="container">
+                <div class="filter-section">
+                    <div class="filter">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort">
+                            <option value="default">Default</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name-asc">Name: A-Z</option>
+                            <option value="name-desc">Name: Z-A</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <label for="price-range">Price range:</label>
+                        <select id="price-range">
+                            <option value="all">All Prices</option>
+                            <option value="0-50000">Under UGX 50,000</option>
+                            <option value="50000-200000">UGX 50,000 - 200,000</option>
+                            <option value="200000-500000">UGX 200,000 - 500,000</option>
+                            <option value="500000">Over UGX 500,000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-grid" id="category-product-grid">
+                    <!-- Products will be loaded from JS based on category -->
+                </div>
+                <div class="pagination">
+                    <button id="prev-page" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                    <span id="page-info">Page 1 of 10</span>
+                    <button id="next-page">Next <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-column">
+                <h3>About Afrishop</h3>
+                <p>Afrishop is one of the leading online stores in Uganda offering high quality products at competitive prices.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category.html">Shop</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="cart.html">My Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Namirembe Road, Bakuli, Kampala-Uganda</p>
+                <p>Tel: +256 705934559, +256 775749505</p>
+                <p>Email: afrishopug@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Afrishop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
