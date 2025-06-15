@@ -551,7 +551,7 @@ function proceedToCheckout() {
     const encodedMessage = encodeURIComponent(message);
     
     // Open WhatsApp with the message
-    window.open(`https://wa.me/256752895919?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/256750680742?text=${encodedMessage}`, '_blank');
 }
 
 // Load cart items on cart page
