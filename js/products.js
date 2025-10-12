@@ -1,12 +1,16 @@
 
 // Categories data
 const categories = [
+     { id: 'home', name: 'Home & Kitchen', image: 'home.jpeg' },
+     { id: 'beauty', name: 'Bedroom Accessories', image: 'bed.jpeg' },
+     { id: 'fashion', name: 'Fashion,Health and Beauty', image: 'health.jpeg' },
+        { id: 'toys', name: 'kids & Games', image: 'kids.jpeg' },
     { id: 'electronics', name: 'Computer, Phones and Electronics', image: 'electronics.jpeg' },
-    { id: 'fashion', name: 'Fashion,Health and Beauty', image: 'health.jpeg' },
-    { id: 'home', name: 'Home & Kitchen', image: 'home.jpeg' },
-    { id: 'beauty', name: 'Bedroom Accessories', image: 'bed.jpeg' },
+    
+   
+  
     { id: 'sports', name: 'Car accessories', image: 'car.jpeg' },
-    { id: 'toys', name: 'kids & Games', image: 'kids.jpeg' }
+   
 ];
 
 
