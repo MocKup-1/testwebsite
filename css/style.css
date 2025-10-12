@@ -357,7 +357,7 @@ nav ul li:hover .dropdown {
 }
 
 .slide img {
-    width: 80%;
+    width: 100%;
     height: 100%;
     object-fit: cover; /* This ensures images cover the container while maintaining aspect ratio */
     object-position: center;
@@ -1697,3 +1697,4 @@ footer {
         font-size: 1.6rem;
     }
 }
+
