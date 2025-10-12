@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category - Afrishop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Afrishop Logo">
+            </div>
+            
+            
+            <button class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="category.html?cat=electronics">Electronics</a></li>
+                            <li><a href="category.html?cat=fashion">Fashion</a></li>
+                            <li><a href="category.html?cat=home">Home & Kitchen</a></li>
+                            <li><a href="category.html?cat=beauty">Beauty & Health</a></li>
+                            <li><a href="category.html?cat=sports">Sports & Outdoors</a></li>
+                            <li><a href="category.html?cat=toys">Toys & Games</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            Cart <span id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+          <div class="search-bar">
+    <input type="text" class="search-input" placeholder="Search products...">
+    <button class="search-btn">
+        <i class="fas fa-search"></i>
+    </button>
+    <div class="search-results"></div>
+</div>
+        </div>
+    </header>
+
+    <!-- Category Header -->
+    <section class="category-header">
+        <div class="container">
+            <h1 id="category-title">Category Name</h1>
+            <p id="category-description">Browse our wide selection of products in this category</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort">
+                        <option value="default">Default</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name-asc">Name: A to Z</option>
+                        <option value="name-desc">Name: Z to A</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-range">Price Range:</label>
+                    <select id="price-range">
+                        <option value="all">All Prices</option>
+                        <option value="0-100000">Under UGX 100,000</option>
+                        <option value="100000-500000">UGX 100,000 - 500,000</option>
+                        <option value="500000-1000000">UGX 500,000 - 1,000,000</option>
+                        <option value="1000000-">Over UGX 1,000,000</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="product-grid" id="category-product-grid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <button id="prev-page" disabled>Previous</button>
+                <span id="page-info">Page 1 of 1</span>
+                <button id="next-page" disabled>Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>About Afrishop</h3>
+                    <p>Your one-stop online store for quality products at affordable prices. We bring you the best from across Africa and beyond.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</p>
+                    <p><i class="fas fa-phone"></i> +256 705 934559</p>
+                    <p><i class="fas fa-envelope"></i> afrishopugbiz@gmail.com</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Afrishop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+  <!-- FAB Container -->
+<div class="fab-container">
+    <!-- Cart FAB -->
+    <div class="fab-main fab-cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="fab-cart-count">0</span>
+    </div>
+    
+    <!-- WhatsApp FAB -->
+    <div class="fab-main fab-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+    
+    <!-- Call FAB -->
+    <div class="fab-main fab-call">
+        <i class="fas fa-phone"></i>
+    </div>
+    
+    <!-- Cart dropdown container -->
+    <div class="fab-cart-container">
+        <div class="fab-cart-header">
+            <h3>Your Cart</h3>
+            <button class="fab-cart-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="fab-cart-items"></div>
+        <div class="fab-cart-summary">
+            <div class="fab-cart-total">
+                <span>Total:</span>
+                <span id="fab-cart-total">UGX 0</span>
+            </div>
+            <div class="fab-cart-buttons">
+                <a href="cart.html" class="btn">View Cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
