@@ -96,14 +96,20 @@ header {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .logo img {
-    height: 50px;
+    height: 60px; /* Increased logo size */
     width: auto;
 }
 
 .logo h1 {
     color: var(--primary);
-    font-size: 1.8rem;
+    font-size: 2.2rem; /* Increased font size */
     font-weight: 700;
 }
 
@@ -304,24 +310,32 @@ nav ul li:hover .dropdown {
 }
 
 /* Hero Section - Improved Responsive Advert Slider */
+
+
+
+
 .hero {
     padding: 20px 0;
-    background-color: var(--light-gray);
+    background-color: #5c0000; /* Added background color to hero area */
+    margin-top: auto;
+    
 }
 
 .advert-slider {
     position: relative;
-    width: 100%;
+    width: 80%;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     aspect-ratio: 16/9; /* Maintain aspect ratio */
-    max-height: 500px;
+    max-height: 450px; /* Slightly reduced slide size */
+    margin: 0 auto;
+    background-color: #550008;
 }
 
 .slides-container {
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
@@ -343,7 +357,7 @@ nav ul li:hover .dropdown {
 }
 
 .slide img {
-    width: 100%;
+    width: 80%;
     height: 100%;
     object-fit: cover; /* This ensures images cover the container while maintaining aspect ratio */
     object-position: center;
@@ -406,16 +420,17 @@ nav ul li:hover .dropdown {
 /* Categories Section */
 .categories {
     padding: 60px 0;
-    background-color: #94c9ff;
+    background-color: rgba(255, 94, 0, 0.897); /* Changed to orange (logo color) */
     border-radius: 10px;
     margin: 20px 0;
 }
 
 .categories-section-title {
-    background-color: #495057;
+    background-color: rgba(247, 247, 247, 0.1);
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 30px;
+
 }
 
 .category-grid {
@@ -423,6 +438,7 @@ nav ul li:hover .dropdown {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
 .category-card {
     background-color: var(--white);
     border-radius: 10px;
@@ -452,37 +468,43 @@ nav ul li:hover .dropdown {
     color: var(--black);
 }
 
-.h2.section-title {
+.section-title {
     color: var(--white);
 }
 
 .view-more {
-    color: var(--primary);
+    color: var(--black);
     font-weight: 500;
     transition: var(--transition);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 5px;
 }
 
 .view-more:hover {
-    color: #e05d00;
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Promotional Flyer */
 .promo-flyer {
-    padding: 40px 0;
+    padding: 5px 0;
     background-color: #ffffff;
     border-radius: 10px;
     margin: 20px 0;
 }
 
 .flyer {
+      position: relative;
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: var(--box-shadow);
 }
 
-.flyer img {
-    width: 100%;
+.flyer img { 
+      position: relative;
+    width:80%;
     height: auto;
     display: block;
     object-fit: cover;
@@ -1399,7 +1421,7 @@ footer {
     }
     
     .advert-slider {
-        max-height: 450px;
+        max-height: 400px;
     }
 }
 
@@ -1413,7 +1435,7 @@ footer {
     }
     
     .advert-slider {
-        max-height: 400px;
+        max-height: 380px;
     }
     
     .category-grid {
@@ -1440,6 +1462,14 @@ footer {
     
     .logo {
         order: 1;
+    }
+    
+    .logo img {
+        height: 50px; /* Adjusted for mobile */
+    }
+    
+    .logo h1 {
+        font-size: 1.8rem; /* Adjusted for mobile */
     }
     
     .mobile-menu {
@@ -1497,7 +1527,7 @@ footer {
     }
     
     .advert-slider {
-        max-height: 350px;
+        max-height: 300px;
         aspect-ratio: 16/9;
     }
     
@@ -1556,7 +1586,7 @@ footer {
     }
     
     .advert-slider {
-        max-height: 250px;
+        max-height: 220px;
         aspect-ratio: 16/9;
     }
     
@@ -1629,7 +1659,7 @@ footer {
     }
     
     .advert-slider {
-        max-height: 200px;
+        max-height: 180px;
         aspect-ratio: 16/9;
     }
     
@@ -1653,5 +1683,17 @@ footer {
     
     .fab-cart-container {
         width: 240px;
+    }
+    
+    .logo {
+        gap: 8px;
+    }
+    
+    .logo img {
+        height: 45px;
+    }
+    
+    .logo h1 {
+        font-size: 1.6rem;
     }
 }
