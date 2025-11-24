@@ -1193,4 +1193,5 @@ function clearSearchResults() {
             }
         });
     });
+
 }
